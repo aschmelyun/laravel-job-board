@@ -30,4 +30,25 @@ class Listing extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
+
+    public function scopeIsActive($builder, bool $status = true)
+    {
+        return $builder->where('is_active', $status);
+    }
+
+    public function scopeSearch($builder, $keyword)
+    {
+        return $builder->where(function ($q) use ($keyword) {
+            $q->where('title', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('company', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('location', 'LIKE', '%' . $keyword . '%');
+        });
+    }
+
+    public function scopeTagged($builder, $slug)
+    {
+        return $builder->whereHas('tags', function ($tag) use ($slug) {
+            return $tag->whereSlug($slug);
+        });
+    }
 }
