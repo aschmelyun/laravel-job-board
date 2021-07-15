@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Listing;
 use App\Models\Tag;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -14,6 +15,7 @@ class ListingController extends Controller
 {
     public function index(Request $request)
     {
+
         $listings = Listing::isActive(true)
             ->with('tags')
             ->when($request->s ?? false, fn ($q) => $q->search(strtolower($request->s)))
