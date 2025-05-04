@@ -1036,16 +1036,16 @@
         },
         {
             "name": "laravel/cashier",
-            "version": "v13.3.0",
+            "version": "v13.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/cashier-stripe.git",
-                "reference": "aa45eb89faaa7782178a8899bb6b57b456349b5c"
+                "reference": "638f4d84d5fade5f79d929879d8c1482503b0137"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/aa45eb89faaa7782178a8899bb6b57b456349b5c",
-                "reference": "aa45eb89faaa7782178a8899bb6b57b456349b5c",
+                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/638f4d84d5fade5f79d929879d8c1482503b0137",
+                "reference": "638f4d84d5fade5f79d929879d8c1482503b0137",
                 "shasum": ""
             },
             "require": {
@@ -1112,20 +1112,20 @@
                 "issues": "https://github.com/laravel/cashier/issues",
                 "source": "https://github.com/laravel/cashier"
             },
-            "time": "2021-06-29T16:09:41+00:00"
+            "time": "2021-07-06T16:39:03+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v8.49.1",
+            "version": "v8.49.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "62aee1bfeefd82f160c7aa3b4c63cb2f053215c0"
+                "reference": "d9b43ee080b4d51344b2e578aa667f85040471a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/62aee1bfeefd82f160c7aa3b4c63cb2f053215c0",
-                "reference": "62aee1bfeefd82f160c7aa3b4c63cb2f053215c0",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d9b43ee080b4d51344b2e578aa667f85040471a2",
+                "reference": "d9b43ee080b4d51344b2e578aa667f85040471a2",
                 "shasum": ""
             },
             "require": {
@@ -1280,7 +1280,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-07-02T16:50:12+00:00"
+            "time": "2021-07-06T14:06:38+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -5777,16 +5777,16 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.14.1",
+            "version": "v1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "ed22aee8d17c7b396f74a58b1e7fefa4f90d5ef1"
+                "reference": "89c6201c74db25fa759ff16e78a4d8f32547770e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/ed22aee8d17c7b396f74a58b1e7fefa4f90d5ef1",
-                "reference": "ed22aee8d17c7b396f74a58b1e7fefa4f90d5ef1",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/89c6201c74db25fa759ff16e78a4d8f32547770e",
+                "reference": "89c6201c74db25fa759ff16e78a4d8f32547770e",
                 "shasum": ""
             },
             "require": {
@@ -5836,9 +5836,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v.1.14.1"
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.15.0"
             },
-            "time": "2021-03-30T06:27:33+00:00"
+            "time": "2021-07-06T20:39:40+00:00"
         },
         {
             "name": "filp/whoops",
@@ -6021,16 +6021,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.8.3",
+            "version": "v1.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "dc7a9ca301fc89e9eaa164d58eac39a39c2e93b0"
+                "reference": "164ab771c8ccef341a07a21fae2ee3b770ec2e9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/dc7a9ca301fc89e9eaa164d58eac39a39c2e93b0",
-                "reference": "dc7a9ca301fc89e9eaa164d58eac39a39c2e93b0",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/164ab771c8ccef341a07a21fae2ee3b770ec2e9a",
+                "reference": "164ab771c8ccef341a07a21fae2ee3b770ec2e9a",
                 "shasum": ""
             },
             "require": {
@@ -6077,7 +6077,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-06-29T21:27:36+00:00"
+            "time": "2021-07-06T16:57:00+00:00"
         },
         {
             "name": "mockery/mockery",

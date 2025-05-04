@@ -15,33 +15,15 @@ class ListingController extends Controller
 {
     public function index(Request $request)
     {
-        $query = Listing::query()
-            ->where('is_active', true)
+
+        $listings = Listing::isActive(true)
             ->with('tags')
-            ->latest();
-
-        if ($request->has('s')) {
-            $searchQuery = trim($request->get('s'));
-
-            $query->where(function (Builder $builder) use ($searchQuery) {
-                $builder
-                    ->orWhere('title', 'like', "%{$searchQuery}%")
-                    ->orWhere('company', 'like', "%{$searchQuery}%")
-                    ->orWhere('location', 'like', "%{$searchQuery}%");
-            });
-        }
-
-        if ($request->has('tag')) {
-            $tag = $request->get('tag');
-            $query->whereHas('tags', function (Builder $builder) use ($tag) {
-                $builder->where('slug', $tag);
-            });
-        }
-
-        $listings = $query->get();
-
-        $tags = Tag::orderBy('name')
+            ->when($request->s ?? false, fn ($q) => $q->search(strtolower($request->s)))
+            ->when($request->tag ?? false, fn ($q) => $q->tagged(strtolower($request->tag)))
+            ->latest()
             ->get();
+
+        $tags = Tag::orderBy('name')->get();
 
         return view('listings.index', compact('listings', 'tags'));
     }
